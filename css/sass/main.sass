@@ -99,7 +99,10 @@ header
 		margin: 0
 		padding: 0
 	li
-		margin-bottom: 12px
+		padding-left: 40px
+		position: relative
+		margin-bottom: 7px
+		margin-top: 7px
 	.tabs
 		.tab
 			display: inline-block
@@ -145,7 +148,59 @@ header
 
 .button-wrap
 	text-align: right
+	margin-top: 20px
 
 a.button
 	color: #ffffff
 	text-decoration: none
+
+.s_tizers
+	+linear-gradient(#c6d8ee, #e8eff7)
+	color: $blue-color
+	font-family: "CleanvertisingLight",sans-serif
+	text-transform: uppercase
+	padding: 30px 0 0
+	span
+		font-size: 14px
+		display: block
+	strong
+		font-weight: normal
+		font-size: 23px
+		display: block
+	.row
+		> div
+			margin-bottom: 35px
+
+.tiz_img, .tiz_descr
+	display: inline-block
+	vertical-align: bottom
+
+.tiz_img
+	margin-right: 1px
+
+.s_tizers .row
+	> div:nth-child(1)
+		strong
+			font-size: 25px
+			line-height: 28px
+		span
+			font-size: 20px
+			line-height: 24px
+	> div:nth-child(2)
+		strong
+			font-size: 25px
+			line-height: 28px
+		span
+			font-size: 16px
+			line-height: 24px
+	> div:nth-child(3)
+		strong
+			line-height: 28px
+		span
+			line-height: 20px
+	> div:nth-child(4)
+		span
+			font-size: 13px
+			line-height: 12px
+		strong
+			line-height: 36px

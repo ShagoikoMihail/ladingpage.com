@@ -2,12 +2,24 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+    .s_tizers .row > div {
+        text-align: center;
+    }
+    .tiz_descr {
+        display: block;
+        margin-top: 10px;
+    }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+    .s_tizers .row > div {
+        text-align: left;
+    }
+    .tiz_descr {
+        display: inline-block;
+        margin-top: 10px;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -21,7 +33,6 @@
     .top_phone .tab_item {
         font-size: 30px;
     }
-    .tabs_header
 }
 
 /* Extra Small Devices, Phones */
@@ -80,8 +91,8 @@
 
 @media only screen and (min-height : 780px) and (min-width: 1400px) {
     .tabs_header {
-        position: absolute;
-        bottom: 80px;
+        position: relative;
+        top: 80px;
     }
     .tabs_header > div {
         width: 100%;
