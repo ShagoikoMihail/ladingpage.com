@@ -112,7 +112,7 @@ header {
 .tabs_header li {
   margin-bottom: 12px;
 }
-.tabs_header .tabs span {
+.tabs_header .tabs .tab {
   display: inline-block;
   background-color: rgba(255, 255, 255, 0.25);
   padding: 15px 18px;
@@ -124,7 +124,7 @@ header {
   -moz-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
-.tabs_header .tabs span.active {
+.tabs_header .tabs .tab.active {
   background-color: rgba(255, 255, 255, 0.6);
   color: #000;
 }

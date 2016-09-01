@@ -21,6 +21,7 @@
     .top_phone .tab_item {
         font-size: 30px;
     }
+    .tabs_header
 }
 
 /* Extra Small Devices, Phones */
@@ -34,6 +35,13 @@
     }
     .top_header h2 {
         font-size: 28px;
+    }
+    .tabs_header .tabs .tab {
+        font-size: 12px;
+        padding: 15px 15px;
+    }
+    .button-wrap {
+        text-align: center;
     }
 }
 
@@ -68,4 +76,18 @@
  /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 
+}
+
+@media only screen and (min-height : 780px) and (min-width: 1400px) {
+    .tabs_header {
+        position: absolute;
+        bottom: 80px;
+    }
+    .tabs_header > div {
+        width: 100%;
+        max-width: 660px;
+    }
+    .top_header {
+        margin-top: 150px;
+    }
 }
