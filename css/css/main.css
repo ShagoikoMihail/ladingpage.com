@@ -346,4 +346,77 @@ form .button-wrap {
   margin: auto;
 }
 
+.s_back {
+  background-image: url(../../images/red_bg.jpg);
+  background-position: top center;
+  text-align: center;
+  padding: 40px 0;
+}
+.s_back h3 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 26px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.13);
+  padding: 10px 3px;
+}
+.s_back h3 .button {
+  margin: auto;
+}
+
+.s_contacts {
+  padding-bottom: 0;
+  text-align: center;
+}
+.s_contacts .wrapper {
+  margin-top: 15px;
+  font-size: 18px;
+}
+.s_contacts h2 {
+  vertical-align: middle;
+  color: black;
+  display: inline-block;
+  margin-bottom: 0;
+  height: 45px;
+  line-height: 45px;
+}
+.s_contacts .tabs {
+  display: inline-block;
+  vertical-align: middle;
+  height: 45px;
+  line-height: 45px;
+  margin-left: 20px;
+}
+.s_contacts .tabs .tab {
+  float: left;
+  padding: 0 60px;
+  border: #9B1818 5px solid;
+  line-height: 38px;
+  color: #9B1818;
+}
+.s_contacts .tabs .tab.active {
+  background-color: #9B1818;
+  color: #fff;
+}
+.s_contacts .tabs .tab:first-child {
+  border-radius: 3px 0 0 3px;
+}
+.s_contacts .tabs .tab:last-child {
+  border-radius: 0 3px 3px 0;
+}
+
+.map {
+  margin-top: 20px;
+  min-height: 480px;
+  background-color: #E1D6B0;
+}
+
+footer {
+  padding: 58px 0 68px;
+}
+footer h2 {
+  color: #000;
+}
+
 /*# sourceMappingURL=main.css.map */
