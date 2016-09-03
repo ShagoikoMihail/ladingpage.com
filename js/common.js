@@ -1,4 +1,6 @@
 $(document).ready(function() {
+	// $(".popup_c").magnificPopup();
+
 	$(".top_header h1").animated("fadeInDown", "fadeInDown");
 	$(".top_header h2").animated("fadeInUp", "fadeInUp");
 
