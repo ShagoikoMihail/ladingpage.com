@@ -15,6 +15,7 @@ body
 	position: relative
 	line-height: 1.6
 	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
 
 h1
 	color: white
@@ -24,7 +25,7 @@ h1
 	font-family: "CleanvertisingLight", sans-serif
 	margin: 0
 
-section
+section, footer
 	padding: 58px 0 68px
 	&.s_dark
 		h2, h3, p
@@ -73,22 +74,30 @@ header
 .top_phone
 	text-align: right
 
+.bot_phone
+	text-align: center
+	color: $red-color
+	margin-top: 50px
+
 .tab_item
 	display: none
 
 .tab_item:first-child
 	display: block
 
-.top_phone .wrapper .tab
-	text-transform: uppercase
-	cursor: pointer
+.top_phone, .bot_phone
+	.wrapper .tab
+		text-transform: uppercase
+		cursor: pointer
 
-.top_phone .wrapper .active
-	text-decoration: underline
+.top_phone, .bot_phone
+	.wrapper .active
+		text-decoration: underline
 
-.top_phone .tab_item
-	font-size: 34px
-	font-family: "RobotoBold", sans-serif
+.top_phone, .bot_phone
+	.tab_item
+		font-size: 34px
+		font-family: "RobotoBold", sans-serif
 
 .top_header
 	margin-top: 70px
@@ -97,8 +106,9 @@ header
 		font-family: "CleanvertisingLight", sans-serif
 		font-size: 36px
 
-.top_phone .wrapper .active
-	color: red
+.top_phone, .bot_phone
+	.wrapper .active
+		color: red
 
 .tabs_header
 	margin-top: 50px
@@ -353,6 +363,13 @@ form
 	background-color: #E1D6B0
 
 footer
-	padding: 58px 0 68px
+	.button-wrap
+		text-align: center
+		margin-top: 30px
 	h2
 		color: #000
+		margin-bottom: 30px
+	p
+		font-size: 18px
+		text-align: center
+		margin-top: 0

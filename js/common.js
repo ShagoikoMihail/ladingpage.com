@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	$(".top_header h1").animated("fadeInDown", "fadeInDown");
+	$(".top_header h2").animated("fadeInUp", "fadeInUp");
+
+
 	$.stellar({
 		responsive: true,
 		horizontalOffset: 60
@@ -27,6 +31,10 @@ $(document).ready(function() {
 		$(".top_phone .wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
 		$(".top_phone .tab_item").hide().eq($(this).index()).fadeIn()
 	}).eq(0).addClass("active");
+	$(".bot_phone .wrapper .tab").click(function() {
+		$(".bot_phone .wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+		$(".bot_phone .tab_item").hide().eq($(this).index()).fadeIn()
+	}).eq(0).addClass("active");
 
 	$(".tabs_header .wrapper .tab").click(function() {
 		$(".tabs_header .wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
@@ -54,7 +62,7 @@ $(document).ready(function() {
 
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
-	$("#form").submit(function(e) {
+	$("form").submit(function(e) {
 		e.preventDefault;
 		$.ajax({
 			type: "POST",
@@ -68,4 +76,15 @@ $(document).ready(function() {
 		});
 	});
 	
+});
+
+
+$(window).load(function() {
+	$(".top_header h1").animated("fadeInDown", "fadeOut");
+	$(".top_header h2").animated("fadeInUp", "fadeOut");
+	$(".tabs_header .wrapper").animated("flipInY", "fadeOut");
+	$(".profi_item").animated("fadeInRight", "fadeOutRight");
+	$(".s_profi form").animated("zoomInRight", "fadeOut");
+	$(".s_back h3").animated("fadeinUp", "fadeOut");
+	$("footer").animated("fadein", "fadeOut");
 });
